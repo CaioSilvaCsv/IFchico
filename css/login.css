@@ -1,0 +1,185 @@
+/* CSS Login */
+/* Variáveis */
+:root{
+  --main-color:#c75887;
+  --link-color:#666;
+  --text1:#999;
+  --highligth-text:#333;
+  --input-text:#555;
+  --white-color:#fff;
+  --point-list:#ccc;
+  --line-input:#d9d9d9;
+}
+
+/* zerar estilos */
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body, html{
+  height: 100%;
+}
+
+ul, li{
+  margin: 0px;
+}
+
+input, button{
+  outline: none !important;
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+/* Utilitários */
+
+.margin-bottom-35{
+  margin-bottom: 35px;
+}
+
+.margin-top-35{
+  margin-top: 35px;
+}
+
+/* Login */
+
+
+.conteiner-login{
+  width: 75%;
+  min-height: 50%;
+  margin: auto;
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: var(--white-color);
+  border-radius: .3rem;
+}
+
+.wrap-login{
+  width: 370px;
+  margin-right: 50px;
+  background: var(--white-color);
+}
+
+/* Formulário */
+
+.login-form{
+  width: 100%;
+}
+
+.login-form-title{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: block;
+  font-size: 39px ;
+  color: #121316;
+  line-height: 1.2;
+  text-align: center;
+}
+/* Input */
+
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid var(--line-input);
+}
+
+.input-form {
+  font-size: 18px;
+  color: var(--input-text);
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 52px;
+  background: transparent;
+  padding: 0 5px;
+}
+
+.focus-input-form {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input-form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.4s;
+  background: var(--main-color);
+}
+
+.focus-input-form::after {
+  font-size: 18px;
+  color: var(--text1);
+  line-height: 1.2;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  padding-left: 5px;
+  transition: all 0.4s;
+}
+
+.input-form:focus + .focus-input-form::after {
+  top: -20px;
+  font-size: 15px;
+}
+
+.input-form:focus + .focus-input-form::before {
+  width: 100%;
+}
+
+.has-val.input-form + .focus-input-form::after {
+  top: -20px;
+  font-size: 15px;
+}
+
+.has-val.input-form + .focus-input-form::before {
+  width: 100%;
+}
+
+/* Botão */
+
+.conteiner-login-form-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form-btn{
+  font-size: 16px;
+  color: var(--white-color);
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: var(--main-color);
+  border-radius: .3rem;
+  transition: all .4s;
+}
+
+.login-form-btn:hover{
+  background-color: var(--highligth-text);
+}

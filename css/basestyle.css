@@ -1,0 +1,135 @@
+body{
+  background-color: #121316;
+}
+body, ul{
+  margin: 0;
+  padding: 0;
+
+}
+
+a{
+  color: #c75887;
+  text-decoration: none;
+  font: sans-serif;
+}
+
+a:hover{
+  background: rhba( 0, 0, 0, .05);
+}
+
+#logo{
+  font: 1.5rem bold;
+
+}
+
+header{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 1rem;
+  justify-content: space-between;
+  background: black;
+}
+
+#menu{
+  display: flex;
+  list-style: none;
+  gap: .5rem;
+}
+
+#menu a{
+  display: block;
+  padding: .5rem;
+}
+
+#menu{
+  display: block;
+  position: absolute;
+  width: 14rem;
+  top: 75px;
+  right: 0;
+  background: black;
+  transition: .6s;
+  z-index: 1000;
+  height:  0;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+
+#nav.active #menu{
+  height: calc(21rem - 70px); /*para ficar a tela inteira sem descer mais. 70px seria do topo */
+  visibility: visible;
+  overflow-y: auto;
+}
+
+#nav.active #menu::-webkit-scrollbar{
+  display: none;
+}
+
+#menu a{
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.185);
+  color: white;
+}
+
+#btn-mobile{
+  display: flex;
+  padding: .5rem 1rem;
+  font: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: .5rem;
+}
+
+#hamburger{
+  color: white;
+  display: block;
+  border-top: 2px solid;
+  width: 20px;
+}
+
+#hamburger::after, #hamburger::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: .3s;
+  position: relative;
+}
+
+#nav.active #hamburger{
+  border-top-color: transparent;
+}
+
+#nav.active #hamburger::before{
+  transform: rotate(-135deg);
+}
+
+#nav.active #hamburger::after{
+  transform: rotate(135deg);
+  top: -7px;
+}
+
+footer{
+  align-items: center;
+  text-align: center;
+  background: black;
+  color: white;
+  height: 40px;
+  font-size: .59rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+#rodape{
+  justify-content: baseline;
+  bottom: 0;
+  margin-top: calc(40px-30px);
+}
