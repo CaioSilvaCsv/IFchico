@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IFchico login</title>
+  <title>Manutenção</title>
   <link rel="stylesheet" href="css/basestyle.css"> <!-- O css básico para a pagina-->
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/manutencao.css">
 </head>
 
 <body>
@@ -27,40 +27,31 @@
       </ul>
     </nav><!-- Fim do menu base -->
   </header>
-  <div class="container">
-    <div class="conteiner-login">
-      <div class="wrap-login">
-        <form class="login-form">
-          <span class="login-form-title">
-            Faça login
-          </span>
-
-          <div class="wrap-input margin-top-35 margin-bottom-35">
-            <input type="email" class="input-form" name="email" autocomplete="off">
-            <span class="focus-input-form" data-placeholder="E-mail ou usuário"></span>
-          </div>
-
-          <div class="wrap-input margin-bottom-35 ">
-            <input type="password" class="input-form" name="password">
-            <span class="focus-input-form" data-placeholder="Senha"></span>
-          </div>
-          
-          <div class="container-login-form-btn">
-            <button class="login-form-btn">Login</button>
-          </div>
-
-        </form>
-      </div>
+  <!-- início do preloader -->
+  <div id="preloader">
+    <div class="inner">
+       <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+       <div class="bolas">
+          <div></div>
+          <div></div>
+          <div></div>                    
+       </div>
     </div>
-  </div>
-  
-  <footer> <!-- O rodapé da pagina começa aqui -->
+</div><!-- fim do preloader --> 
+<div class="aviso">
+  <h1>Em manutenção!</h1>
+  <h2>Indisponível no momento</h2>
+  <p>Vamos resolver o mais rápido possível</p>
+  <p>Clique na logo para voltar para a home</p>
+</div>
+
+
+  <footer>
+    <!-- O rodapé da pagina começa aqui -->
     <p id="rodape">Desenvolvido por &copy;Grupo Web 2021/2022</p>
   </footer>
-  
   <!-- O js da página vai ficar aqui -->
   <script src="js/basescript.js"></script>
-  <script src="js/login.js"></script>
 </body>
 
 </html>

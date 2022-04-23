@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/basestyle.css"> <!-- O css básico para a pagina-->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <header id="header">
+    <a id="logo" href="">IFchico</a>
+    <nav id="nav">
+      <!-- O aria serve para a acessibilidade do usuário -->
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+
+      <ul id="menu" role="menu">
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="colaboradores.html">Maiores colaboradores </a></li>
+        <li><a href="entrecontato.html">Entre em contato</a></li>
+        <li><a href="enviefofoca.html">Envie sua fofoca</a></li>
+      </ul>
+    </nav><!-- Fim do menu base -->
+  </header>
+
+  <div class="flex-not">
+    <div class="not-pri">
+      <a href="noticiafantasia.html">
+        <img class="img-p" src="images/imgnoticia/capa.jpeg" alt="foto da noticia">
+        <div class="baixo">
+          <h5 class="not-pri-data">
+            Postado em xx/xx/xx
+          </h5>
+          <p class="not-pri-titulo">
+            Apagões Súbitos! <br> IF assombrado?
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="not-pri">
+      <a href="noticiafantasia.html">
+        <img class="img-p" src="images/imgnoticia/exemplo.jpg" alt="capa exemplo">
+        <div class="baixo">
+          <h5>
+            Postado em xx/xx/xx
+          </h5>
+          <p>
+            exemplo exemplo <br> exemplo exemplo
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="not-pri">
+      <a href="noticiafantasia.html">
+        <img class="img-p" src="images/imgnoticia/exemplo.jpg" alt="capa exemplo">
+        <div class="baixo">
+          <h5>
+            Postado em xx/xx/xx
+          </h5>
+          <p>
+            exemplo exemplo <br> exemplo exemplo
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="segunda">
+    <div class="topo">
+      <p id="nottext">Principais notícias da semana</p>
+      <a href="noticiasrecentes.html">
+        <p id="vermais">Ver mais</p>
+      </a>
+    </div>
+    <div class="noticias">
+      <div id="not-1">
+        <a href="noticiafantasia.html">
+          <img src="images/imgnoticia/not-1.jpg" alt="noticia 1">
+          <p id="titulo">Fotos tiradas antes do feriado na escola</p>
+        </a>
+      </div>
+      <div id="not-2">
+        <a href="noticiafantasia.html">
+          <img src="images/imgnoticia/not-2.jpg" alt="noticia 2">
+          <p id="titulo">Flores no calor</p>
+        </a>
+      </div>
+      <div id="not-3">
+        <a href="noticiafantasia.html">
+          <img src="images/imgnoticia/not-3.jpg" alt="noticia 3">
+          <p id="titulo">Uai trem </p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tags">
+     <div class="topo">
+       <p class="cor1 tag-titulo">Tags</p>
+     </div>
+     <div class="astags">
+       <a href="manutencao.html">
+         <p class="tag cor1 fundo1">
+          #fofocaif
+         </p>
+       </a>
+       <a href="manutencao.html">
+         <p class="tag cor2 fundo2">
+          #professores
+         </p>
+       </a>
+       <a href="manutencao.html">
+         <p class="tag cor3 fundo3">
+          #fofocandonoif
+         </p>
+       </a>
+       <a href="manutencao.html">
+         <p class="tag cor4 fundo4">
+          #saibatudo
+         </p>
+       </a>
+       <a href="manutencao.html">
+         <p class="tag cor5 fundo5">
+          #ifchico
+         </p>
+       </a>
+       <a href="manutencao.html">
+         <p class="tag cor6 fundo6">
+          #alunos
+         </p>
+       </a>
+       <a href="manutencao.html">
+         <p class="tag cor7 fundo7">
+          #medio
+         </p>
+       </a>
+       <a href="manutencao.html">
+         <p class="tag cor8 fundo8">
+          #superior
+         </p>
+       </a>
+       <a href="manutencao.html">
+         <p class="tag cor9 fundo9">
+          #tretas
+         </p>
+       </a>
+     </div>
+  </div>
+
+  <footer>
+    <!-- O rodapé da pagina começa aqui -->
+    <p id="rodape">Desenvolvido por &copy;Grupo Web 2021/2022</p>
+  </footer>
+  <!-- O js da página vai ficar aqui -->
+  <script src="js/basescript.js"></script>
+</body>
+
+</html>

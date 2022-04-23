@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticia fantasia</title>
+  <link rel="stylesheet" href="css/basestyle.css"> <!-- O css básico para a pagina-->
+  <link rel="stylesheet" href="css/noticia.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <header id="header">
+    <a id="logo" href="index.html">IFchico</a>
+    <nav id="nav">
+      <!-- O aria serve para a acessibilidade do usuário -->
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+
+      <ul id="menu" role="menu">
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="colaboradores.html">Maiores colaboradores </a></li>
+        <li><a href="entrecontato.html">Entre em contato</a></li>
+        <li><a href="enviefofoca.html">Envie sua fofoca</a></li>
+      </ul>
+    </nav><!-- Fim do menu base -->
+  </header>
+
+
+  <div class="materia">
+    <div class="compartilhamento">
+      <p>Compartilhe:</p>
+      <a href="javascript:void(0)" onclick="share()">
+        <img id="compartilhar" src="images/whatsapp.png" alt="">
+      </a>
+      <a href="" id="mail-share-btt" rel="nofollow" target="_black" class="mail-share-button">
+        <img id="compartilhar" src="images/email.png" alt="email imagem">
+      </a>
+    </div>
+    <h1>
+      Lorem Ipsum
+    </h1>
+    <h2 id="subtitulo">
+      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    </h2>
+
+    <h3 id="data">Postado dia 21/04/2022</h3>
+
+    <img id="img" src="images/imgnoticia/capa.jpeg" alt="foto noticia">
+
+    <p id="texto">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas sollicitudin viverra. Donec id elit a odio
+      aliquam tincidunt a et urna. Nulla efficitur iaculis egestas. Ut porttitor elit id massa tincidunt, vitae
+      fringilla urna dignissim. Curabitur luctus eros quis odio consectetur gravida. Donec quis commodo lacus. Cras et
+      laoreet leo, a efficitur est. In vulputate, lectus sed ornare suscipit, odio mi aliquet lorem, quis elementum
+      libero purus interdum libero. Cras eget ultrices velit, nec ullamcorper urna. Pellentesque id ex sit amet nunc
+      maximus sodales nec a neque. Morbi sed elementum mauris. Morbi vitae libero in ipsum consectetur iaculis. Vivamus
+      luctus, est quis dictum blandit, ligula massa pharetra purus, sed egestas odio nibh id lorem. <br>
+
+      Vivamus vitae ante efficitur, condimentum ex sit amet, condimentum mauris. Morbi sem nunc, porta non tortor eget,
+      scelerisque commodo ligula. Nunc vel lobortis magna. Nunc viverra consectetur mattis. Quisque malesuada aliquam
+      velit sit amet condimentum. Quisque facilisis dapibus tortor, id tincidunt orci tincidunt at. Morbi molestie magna
+      eget sapien tincidunt pellentesque. Mauris sodales cursus ligula, sed dapibus diam imperdiet sed. Sed fermentum
+      leo ut tellus maximus rhoncus. <br>
+
+      Suspendisse ultrices scelerisque dui, sed porta odio dapibus at. Aenean luctus elit placerat, blandit diam vel,
+      varius elit. Nulla eget lectus pellentesque, egestas nulla eget, pellentesque neque. Curabitur ullamcorper
+      pharetra arcu, ut suscipit dolor feugiat sit amet. Pellentesque in dui facilisis, placerat eros et, dapibus
+      tortor. Sed at libero non neque accumsan dignissim. Curabitur pharetra est sed mattis ultricies. Duis dapibus quam
+      quis sem feugiat ultricies. Proin tincidunt laoreet consectetur. Donec vulputate ligula in purus fermentum
+      laoreet. Curabitur a massa in nisi mollis mattis. Mauris tincidunt molestie sem, cursus lobortis libero rhoncus
+      vel. Vivamus nec diam tristique, bibendum enim sed, pulvinar mi. Pellentesque finibus auctor tempor. In finibus
+      vel diam id vulputate. <br>
+
+      Vivamus ornare lorem a libero pretium, vel ultricies arcu consequat. Morbi et ultrices nibh. Sed in augue non urna
+      egestas iaculis a quis purus. Phasellus vitae mattis leo, ut tempus mauris. Ut dictum finibus erat malesuada
+      tempus. Morbi placerat elementum lectus, eu tincidunt lorem aliquam vitae. Nam nisl nunc, pharetra vel mollis a,
+      tristique in urna. Nunc dictum auctor tortor a pulvinar. Maecenas viverra euismod luctus. Quisque a odio ut orci
+      laoreet eleifend vel vitae sapien. Sed id quam euismod, mollis massa sed, finibus augue. <br>
+
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean id nisl in
+      ligula maximus lacinia id sed turpis. Proin eget fermentum est. Praesent efficitur sagittis eros ac vulputate.
+      Phasellus dolor turpis, tristique at finibus eu, tincidunt sed massa. Suspendisse ullamcorper, massa sed rhoncus
+      bibendum, tortor tellus malesuada mauris, nec convallis dui ante eu velit. Nulla faucibus iaculis tincidunt. <br>
+
+      Fusce in diam iaculis, semper neque sit amet, varius ipsum. Vivamus nisl arcu, tristique a accumsan sed, interdum
+      eu sem. Quisque fermentum egestas ex vel ultrices. Pellentesque nec sem suscipit, rutrum enim a, finibus libero.
+      Curabitur urna lacus, pellentesque eget orci ut, bibendum aliquet ipsum. Nunc lacinia eget dui vitae dapibus.
+      Aliquam eleifend sem interdum consectetur tincidunt. Aliquam maximus nulla et nisl iaculis, vitae aliquam lorem
+      rhoncus. Praesent augue sem, volutpat non nisl et, dapibus maximus lectus. Pellentesque luctus turpis augue, id
+      pulvinar risus consequat vitae. Suspendisse in ante pharetra enim vehicula sollicitudin posuere a nisl. Donec at
+      nisl tempus justo vehicula luctus sit amet nec massa. Etiam interdum congue nulla, at vestibulum nibh. Integer
+      rhoncus, turpis eget imperdiet consectetur, lectus nisl finibus eros, vitae vulputate metus ex at augue. <br>
+
+      Integer ut convallis neque. Sed dictum vestibulum dolor, sit amet pulvinar lacus imperdiet ac. Praesent nec libero
+      ac arcu suscipit ornare. Nunc quis venenatis tortor, ut maximus eros. Aenean vel faucibus nulla. Quisque tincidunt
+      tincidunt urna, a venenatis ante. Cras sit amet rhoncus risus. Etiam vulputate mauris nisi, eget lacinia quam
+      congue congue. Suspendisse imperdiet, est at sollicitudin gravida, ante mi lacinia nisi, sed aliquet diam eros at
+      turpis. Duis congue felis sed risus mattis, vitae volutpat enim ullamcorper. <br>
+
+      Pellentesque ultricies in elit ac luctus. Sed laoreet vehicula odio, et convallis elit placerat eget. Sed ac odio
+      eget lorem vulputate elementum vehicula eget velit. Duis in ex a turpis euismod tincidunt ornare ac est. Nunc eu
+      nunc at sem imperdiet molestie nec sodales lectus. Donec sit amet mauris ac nisi sagittis suscipit at eu ex.
+      Nullam consequat dictum turpis eu faucibus. Ut eu tempus erat. Donec mattis tempus viverra. <br>
+
+      Proin tempor efficitur nisi, nec pretium nisi semper vel. Nullam ut elit nibh. Etiam tellus odio, varius non dui
+      nec, semper volutpat urna. Quisque convallis sem sit amet nunc ornare ultricies. Nunc non ex fringilla, vulputate
+      magna sit amet, cursus lacus. Donec eget nisi at risus egestas viverra. Vivamus eleifend a ipsum vitae rhoncus. Ut
+      eu elit eget magna suscipit mattis. Aenean lobortis magna vel quam convallis posuere. Phasellus id ligula sit amet
+      ligula venenatis sollicitudin. Fusce dapibus euismod elit, eu rutrum enim condimentum sit amet. <br>
+
+      Sed consectetur aliquam est, quis dignissim risus. Praesent laoreet tincidunt mauris, ut maximus orci pretium ut.
+      Praesent facilisis enim quis dolor consectetur semper. Sed pharetra arcu et ipsum porta tempus. Aliquam erat
+      volutpat. Quisque at bibendum nibh. Integer pellentesque eros id nisi malesuada, vitae dignissim urna sagittis.
+      Nunc faucibus condimentum tincidunt. <br>
+    </p>
+  </div>
+
+  <div class="tags">
+    <div class="topo">
+      <p class="cor1">Tags relacionadas:</p>
+      <p id="vermais">Ver mais</p>
+    </div>
+    <div class="area-tag">
+      <p class="tag tag-site cor3 fundo3">#exemplo</p>
+      <p class="tag tag-site cor6 fundo8">#exemplo</p>
+    </div>
+
+  </div>
+
+  <div class="segunda">
+    <div class="topo">
+      <p id="nottext">Principais notícias da semana</p>
+      <a href="noticiasrecentes.html">
+        <p id="vermais">Ver mais</p>
+      </a>
+    </div>
+    <div class="noticias">
+      <div id="not-1">
+        <a href="noticiafantasia.html">
+          <img src="images/foto.jpg" alt="noticia 1">
+          <p id="titulo">Fotos tiradas antes do feriado na escola</p>
+        </a>
+      </div>
+      <div id="not-2">
+        <a href="noticiafantasia.html">
+          <img src="images/fotorosa.jpg" alt="noticia 2">
+          <p id="titulo">Flores no calor</p>
+        </a>
+      </div>
+      <div id="not-3">
+        <a href="noticiafantasia.html">
+          <img src="images/trem.jpg" alt="noticia 3">
+          <p id="titulo">Uai trem </p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!-- O rodapé da pagina começa aqui -->
+    <p id="rodape">Desenvolvido por &copy;Grupo Web 2021/2022</p>
+  </footer>
+  <!-- O js da página vai ficar aqui -->
+  <script src="js/basescript.js"></script>
+  <script src="js/compartilhar.js"></script>
+</body>
+
+</html>

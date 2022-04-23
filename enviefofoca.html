@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFchico envie sua fofoca</title>
+  <link rel="stylesheet" href="css/basestyle.css"> <!-- O css básico para a pagina-->
+  <link rel="stylesheet" href="css/envie.css">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <a id="logo" href="">IFchico</a>
+    <nav id="nav">
+      <!-- O aria serve para a acessibilidade do usuário -->
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+
+      <ul id="menu" role="menu">
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="colaboradores.html">Maiores colaboradores </a></li>
+        <li><a href="entrecontato.html">Entre em contato</a></li>
+        <li><a href="enviefofoca.html">Envie sua fofoca</a></li>
+      </ul>
+    </nav><!-- Fim do menu base -->
+  </header>
+
+  <div class="container">
+    <div class="container-enviefofoca">
+      <div class="wrap-fofoca">
+        <form action="enviar-fofoca" class="fofoca-form">
+          <div class="wrap-input margin-bottom-35">
+            <input type="text" name="titulo" id="titulo" autocomplete="off" class="input-form ">
+            <span class="focus-input-form" data-placeholder="titulo"></span>
+          </div>
+          <div class="wrap-input margin-top-35 margin-bottom-35">
+            <input type="text" name="subtitulo" id="subtitulo" autocomplete="off" class="input-form ">
+            <span class="focus-input-form" data-placeholder="Sub titulo"></span>
+          </div>
+          <div>
+            <p>Digite a sua fofoca !</p>
+            <textarea name="enviar-fofoca" id="enviar-fofoca" cols="50" rows="20" class="input-form texta"></textarea>
+          </div>
+          <div class="image">
+            <div class="editar-content">
+              <span>
+                <i>editar</i>
+              </span>
+            </div>
+            <div id="new">
+              <div class="close-preview-js close-preview">x</div>
+            </div>
+            <img src="images/imgback.png" alt="Sem imagem">
+          </div>
+          <br>
+          <input id="file-preview-js" type="file" accept="image/*" onchange="loaderFile(event)"><br><br>
+        
+          <a id="falsobtn" href="index.html" onclick="confirmacao()"> Enviar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!-- O rodapé da pagina começa aqui -->
+    <p>Desenvolvido por &copy;Grupo Web 2021-2022</p>
+  </footer>
+  <!-- O js da página vai ficar aqui -->
+  <script src="js/enviarfoto.js"></script>
+  <script src="js/basescript.js"></script>
+</body>
+
+</html>
