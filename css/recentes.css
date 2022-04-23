@@ -20,18 +20,19 @@ h1{
     backdrop-filter: blur(7px);
     border-radius: .4rem;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    width: 7.45rem;
-    height: 5rem;
+    width: 7rem;
+    min-height: 6rem;
     padding: .2rem;
-    margin-top: -1rem;
     color: aliceblue;
     text-align: center;
     padding-top: .4rem;
+    margin: auto;
+    margin-top: 4rem;
 }
 
-.noticiasection{
-    display: grid;
-    grid-template-columns: auto auto auto;
+.linha{
+    display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -39,7 +40,6 @@ h1{
     margin: 2rem;
 }
 
-/* Teste */
 .card{
     width:150px;
     height: 200px;
@@ -64,12 +64,11 @@ h1{
 
 .card:hover .card-image{
     transform: scale(1.15);
+    background-color: transparent;
 }
 
 .card-title{
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
+    bottom: 1px;
     font-size: 20px;
     text-shadow: 0 0 1px rgba(0, 0, 0, .5);
     color: white;
