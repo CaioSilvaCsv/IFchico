@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #121316;
+  color: white;
 }
 body, ul{
   margin: 0;
@@ -7,20 +12,17 @@ body, ul{
 
 }
 
-a{
+#logo{
   color: #c75887;
   text-decoration: none;
-  font: sans-serif;
+  font-size: 2rem;
+  font-family: bold;
 }
 
 a:hover{
   background: rhba( 0, 0, 0, .05);
 }
 
-#logo{
-  font: 1.5rem bold;
-
-}
 
 header{
   box-sizing: border-box;
@@ -46,7 +48,7 @@ header{
 #menu{
   display: block;
   position: absolute;
-  width: 14rem;
+  width: 13rem;
   top: 75px;
   right: 0;
   background: black;
@@ -58,7 +60,7 @@ header{
 }
 
 #nav.active #menu{
-  height: calc(21rem - 70px); /*para ficar a tela inteira sem descer mais. 70px seria do topo */
+  height: calc(21rem - 119px); /*para ficar a tela inteira sem descer mais. 70px seria do topo */
   visibility: visible;
   overflow-y: auto;
 }
@@ -116,20 +118,38 @@ header{
 }
 
 footer{
-  align-items: center;
-  text-align: center;
   background: black;
   color: white;
   height: 40px;
   font-size: .59rem;
   width: 100%;
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
   bottom: 0;
-  
+}
+a{
+  text-decoration: none;
 }
 
-#rodape{
-  justify-content: baseline;
-  bottom: 0;
-  margin-top: calc(40px-30px);
+*{
+  /* funcionando no FireFox a barra de rolagem */
+  scrollbar-width: thin;
+  scrollbar-color: pink gray;
+}
+/* funcionando no chrome, safari e edge a barra de rolagem */
+
+*::-webkit-scrollbar{
+  width: .3rem;
+}
+
+*::-webkit-scrollbar-track{
+  background: #232428;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #ff2f97;
+  border-radius: .5rem;
+  border: 2px solid white;
 }

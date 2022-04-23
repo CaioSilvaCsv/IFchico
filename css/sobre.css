@@ -1,0 +1,114 @@
+#logo{
+    font-size: 10rem;
+}
+
+.dev{
+    max-width: 300px;
+    width: 13rem;
+    border-radius: 100%;
+    margin: 1rem;
+}
+
+.instagram{
+    max-width: 300px;
+    width: 7rem;
+}
+
+.top{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 1rem;
+}
+
+.conteiner{
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.slide{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    scroll-snap-align: center;
+}
+@media (max-width: 550px) {
+    .slide{
+        flex-direction: column;
+    }
+    .top{
+        font-size: 1.3rem;
+    }
+    #logo{
+        font-size: 3rem;
+    }
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+h3{
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    font-size: 2rem;
+    padding: .5rem;
+    border-radius: .4rem;
+
+    transition: background-size 500ms;
+}
+    
+h3:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+
+.link{
+    background-image: linear-gradient(#ff2f97, #ff2f97);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+
+    transition: background-size 500ms;
+}
+
+.link:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+.line{
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation{
+    animation: blinkCursor 500ms steps(20) infinite normal, 
+    typing 8s steps(40) 2s normal both;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 17em;
+    }
+}
+
+@keyframes blinkCursor{
+    form{
+        border-right-color: rgba(255,255,255,0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}

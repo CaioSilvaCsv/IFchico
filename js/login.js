@@ -4,7 +4,8 @@ for(let input of inputs){
     if (input.value.trim()!= ""){
       input.classList.add("has-val");
     } else {
-      input.classList.remove("has-val")
+      input.classList.remove("has-val");
     }
   });
 }
+

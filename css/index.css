@@ -1,0 +1,186 @@
+.img-p{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem;
+}
+
+.baixo{ 
+    background-color: #ff2f97 !important;
+    margin-top: -1.9rem;
+    border-radius: .5rem;
+    padding: .3rem;
+}
+
+h5{
+    padding-top: .4rem;
+}
+
+.not-pri{
+    padding-top: 2rem;
+    justify-content: space-evenly;
+}
+
+.flex-not{
+    display: flex;
+    margin-left: auto;
+    margin-right:auto ;
+}
+
+.not-pri{
+    margin: auto;
+    
+}
+
+.segunda{
+    background: gray;
+    width: 75%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    border-radius: .5rem;
+}
+
+.topo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+a{
+    color: white;
+}
+
+#vermais{
+    background-color: red;
+    padding: .3rem;
+    width: 6rem;
+    text-align: center;
+    border-radius: .3rem;
+}
+
+.noticias img{
+    width: 8rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: .6rem;
+}
+
+.noticias{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#titulo{
+    background-color: rgba(81, 81, 81, .45);
+    margin-top: -.9rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    height: 4rem;
+    width: 6rem;
+    text-align: center;
+}
+
+.tags{
+    background-color: white;
+    width: 75%;
+    padding-bottom: 1rem;
+    margin: auto;
+    border-radius: .5rem;
+    margin-bottom: 6rem;
+}
+
+.astags{
+    width: 60%;
+    background-color: gray;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: .5rem;
+}
+
+.tag{
+    margin: auto;
+    padding: .6rem;
+    border-radius: .4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.cor1{
+    color: black;
+}
+
+.cor2{
+    color:#ff6f28;
+}
+
+.cor3{
+    color: #163e58;
+}
+
+.cor4{
+    color: #30110f;
+}
+
+.cor5{
+    color: #f2bd95;
+}
+
+.cor6{
+    color: #e2a65b;
+}
+
+.cor7{
+    color: #ee8d5a;
+}
+
+.cor8{
+    color: #f83902;
+}
+
+.cor9{
+    color: #f5a838;
+}
+
+.fundo1{
+    background-color: #0090fd;
+}
+
+.fundo2{
+    background-color:#2e2f2a;
+}
+
+.fundo3{
+    background-color: #f6b51d;
+}
+
+.fundo4{
+    background-color: #f2bd95;
+}
+
+.fundo5{
+    background-color: #712923;
+}
+
+.fundo6{
+    background-color: #854e92;
+}
+
+.fundo7{
+    background-color: #4f244f;
+}
+
+.fundo8{
+    background-color: #2a344f;
+}
+
+.fundo9{
+    background-color: #141412;
+}
+
